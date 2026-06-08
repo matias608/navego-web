@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog de NAVEGO — Ideas, estrategias y tendencias de marketing para hacer crecer tu negocio." />
+  <title>Blog | NAVEGO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+
+  <canvas id="circuitCanvas" aria-hidden="true"></canvas>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="assets/images/nave.svg" alt="NAVEGO" /></a>
+      <nav class="nav" id="nav">
+        <a href="index.html#servicios" class="nav__link">Servicios</a>
+        <a href="index.html#nosotros" class="nav__link">Nosotros</a>
+        <a href="index.html#resultados" class="nav__link">Resultados</a>
+        <a href="casos.html" class="nav__link">Casos</a>
+        <a href="blog.html" class="nav__link nav__link--active">Blog</a>
+        <a href="index.html#contacto" class="nav__link nav__link--cta">Hablemos</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO BLOG -->
+    <section class="blog-hero">
+      <div class="container blog-hero__inner">
+        <span class="section__tag">Nuestro blog</span>
+        <h1 class="blog-hero__title">Ideas que <span class="highlight">mueven</span> negocios</h1>
+        <p class="blog-hero__sub">Estrategias, tendencias y casos reales de marketing para que tomes mejores decisiones.</p>
+
+        <!-- FILTROS -->
+        <div class="blog-filters" id="blogFilters">
+          <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="estrategia">Estrategia</button>
+          <button class="filter-btn" data-filter="digital">Marketing Digital</button>
+          <button class="filter-btn" data-filter="contenido">Contenido</button>
+          <button class="filter-btn" data-filter="datos">Datos y Analytics</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTADO DE ARTÍCULOS -->
+    <section class="section blog-list">
+      <div class="container">
+
+        <!-- POST DESTACADO -->
+        <a href="blog/estrategia-de-contenidos.html" class="post-featured" data-category="contenido">
+          <div class="post-featured__meta">
+            <span class="post-tag">Contenido</span>
+            <span class="post-date">2 jun 2026</span>
+          </div>
+          <h2 class="post-featured__title">Cómo construir una estrategia de contenidos que realmente genere leads</h2>
+          <p class="post-featured__excerpt">El contenido sin estrategia es ruido. Te mostramos el proceso exacto que usamos con nuestros clientes para convertir artículos y publicaciones en oportunidades de negocio reales.</p>
+          <span class="post-read-more">Leer artículo →</span>
+        </a>
+
+        <!-- GRID DE ARTÍCULOS -->
+        <div class="posts-grid" id="postsGrid">
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="estrategia">
+            <div class="post-card__top">
+              <span class="post-tag">Estrategia</span>
+              <span class="post-date">28 may 2026</span>
+            </div>
+            <h3 class="post-card__title">Los 5 errores de marketing que frenan el crecimiento de las pymes</h3>
+            <p class="post-card__excerpt">Después de trabajar con más de 120 empresas, identificamos los patrones que se repiten cuando el marketing no funciona.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="digital">
+            <div class="post-card__top">
+              <span class="post-tag">Marketing Digital</span>
+              <span class="post-date">20 may 2026</span>
+            </div>
+            <h3 class="post-card__title">SEO en 2026: qué cambió y cómo adaptarse antes que tu competencia</h3>
+            <p class="post-card__excerpt">Google sigue cambiando las reglas. Te explicamos qué señales prioriza hoy el algoritmo y cómo ajustar tu estrategia.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="datos">
+            <div class="post-card__top">
+              <span class="post-tag">Datos y Analytics</span>
+              <span class="post-date">12 may 2026</span>
+            </div>
+            <h3 class="post-card__title">Las 7 métricas de marketing que sí importan (y las que deberías ignorar)</h3>
+            <p class="post-card__excerpt">Vanity metrics vs. métricas de negocio. Aprende a leer tus datos para tomar decisiones que impacten el resultado final.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="contenido">
+            <div class="post-card__top">
+              <span class="post-tag">Contenido</span>
+              <span class="post-date">5 may 2026</span>
+            </div>
+            <h3 class="post-card__title">Email marketing en 2026: sigue siendo el canal con mejor ROI</h3>
+            <p class="post-card__excerpt">Con el ruido de las redes sociales, el email volvió a destacar. Te mostramos cómo construir una lista y monetizarla.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="estrategia">
+            <div class="post-card__top">
+              <span class="post-tag">Estrategia</span>
+              <span class="post-date">28 abr 2026</span>
+            </div>
+            <h3 class="post-card__title">Cómo definir tu cliente ideal sin gastar en investigación de mercado</h3>
+            <p class="post-card__excerpt">El buyer persona no se inventa — se descubre. Técnicas prácticas para entender a tu audiencia con los recursos que ya tenés.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+          <a href="blog/estrategia-de-contenidos.html" class="post-card" data-category="digital">
+            <div class="post-card__top">
+              <span class="post-tag">Marketing Digital</span>
+              <span class="post-date">18 abr 2026</span>
+            </div>
+            <h3 class="post-card__title">Paid media para negocios chicos: cómo competir sin presupuesto millonario</h3>
+            <p class="post-card__excerpt">Google Ads y Meta no son solo para las grandes empresas. Estrategias de segmentación y bidding para maximizar cada peso invertido.</p>
+            <span class="post-read-more">Leer →</span>
+          </a>
+
+        </div>
+
+        <p class="blog-empty" id="blogEmpty" style="display:none;">No hay artículos en esta categoría todavía.</p>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section blog-cta">
+      <div class="container blog-cta__inner">
+        <h2 class="blog-cta__title">¿Querés aplicar esto en tu negocio?</h2>
+        <p class="blog-cta__sub">Primera consulta sin costo. Analizamos tu situación y te decimos exactamente por dónde empezar.</p>
+        <a href="index.html#contacto" class="btn btn--primary">Hablar con un especialista</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo"><img src="assets/images/nave.svg" alt="NAVEGO" /></span>
+      <p class="footer__copy">&copy; 2026 NAVEGO. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="index.html">Inicio</a>
+        <a href="mailto:matias@nave.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/circuit.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

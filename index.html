@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NAVEGO - Consultoría de Marketing. Estrategias que generan resultados reales para tu negocio." />
+  <title>NAVEGO | Consultoría de Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <canvas id="circuitCanvas" aria-hidden="true"></canvas>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo"><img src="assets/images/nave.svg" alt="NAVEGO" /></a>
+      <nav class="nav" id="nav">
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#nosotros" class="nav__link">Nosotros</a>
+        <a href="#resultados" class="nav__link">Resultados</a>
+        <a href="casos.html" class="nav__link">Casos</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="#contacto" class="nav__link nav__link--cta">Hablemos</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__badge">Consultoría de Marketing</div>
+        <h1 class="hero__title">
+          Estrategias que<br />
+          <span class="highlight">convierten</span> tu marca<br />
+          en resultados.
+        </h1>
+        <p class="hero__sub">
+          Ayudamos a empresas a crecer con marketing estratégico, basado en datos y enfocado en resultados medibles.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Quiero crecer ahora</a>
+          <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">+120</span>
+            <span class="stat__label">Clientes satisfechos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">8 años</span>
+            <span class="stat__label">De experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">3.8x</span>
+            <span class="stat__label">ROI promedio</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__gradient"></div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Lo que hacemos</span>
+          <h2 class="section__title">Servicios diseñados<br />para escalar tu negocio</h2>
+        </div>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="service-card__title">Estrategia de Marketing</h3>
+            <p class="service-card__desc">Diseñamos el plan completo: audiencia, canales, mensajes y métricas. Sin conjeturas, con datos.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="service-card__title">Marketing Digital</h3>
+            <p class="service-card__desc">SEO, SEM, redes sociales y email marketing integrados para maximizar tu presencia online.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="service-card__title">Paid Media</h3>
+            <p class="service-card__desc">Campañas en Google, Meta, LinkedIn y TikTok Ads optimizadas para el menor costo por adquisición posible.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="service-card__title">Branding y Posicionamiento</h3>
+            <p class="service-card__desc">Construimos la identidad de marca que genera confianza y diferencia tu negocio de la competencia.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="service-card__title">Analítica y Reportes</h3>
+            <p class="service-card__desc">Dashboards en tiempo real y reportes claros. Sabrás exactamente qué funciona y qué no.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="service-card__title">Contenido y Copy</h3>
+            <p class="service-card__desc">Textos y contenido que conectan con tu audiencia y los impulsan a tomar acción.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section section--dark" id="nosotros">
+      <div class="container about__inner">
+        <div class="about__content">
+          <span class="section__tag section__tag--light">Quiénes somos</span>
+          <h2 class="section__title section__title--light">Marketing que entiende<br />tu negocio desde adentro</h2>
+          <p class="about__text">
+            En NAVEGO no vendemos paquetes genéricos. Nos involucramos profundamente con cada cliente para entender su mercado, sus clientes y sus objetivos antes de diseñar cualquier estrategia.
+          </p>
+          <p class="about__text">
+            Nuestro equipo combina experiencia en estrategia, creatividad y tecnología para entregar campañas que realmente mueven el negocio.
+          </p>
+          <ul class="about__list">
+            <li>Diagnóstico gratuito en la primera sesión</li>
+            <li>Equipo dedicado por cliente</li>
+            <li>Reportes semanales de performance</li>
+            <li>Sin contratos largos — resultados o te vas sin costo</li>
+          </ul>
+        </div>
+        <div class="about__visual">
+          <div class="about__card">
+            <div class="about__card-num">01</div>
+            <div class="about__card-text">Diagnóstico y auditoría de tu situación actual</div>
+          </div>
+          <div class="about__card">
+            <div class="about__card-num">02</div>
+            <div class="about__card-text">Diseño de estrategia personalizada</div>
+          </div>
+          <div class="about__card">
+            <div class="about__card-num">03</div>
+            <div class="about__card-text">Ejecución, medición y optimización continua</div>
+          </div>
+          <div class="about__card">
+            <div class="about__card-num">04</div>
+            <div class="about__card-text">Escalado y expansión de canales</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS PREVIEW -->
+    <section class="section section--dark" id="casos-preview">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Casos de éxito</span>
+          <h2 class="section__title">Proyectos que <span class="highlight">transformamos</span><br />en resultados</h2>
+        </div>
+        <div class="casos-preview__grid">
+
+          <a href="casos/venturaskyresidences.html" class="caso-preview-card">
+            <div class="caso-preview-card__img-wrap">
+              <img src="casos/sky-img.png" alt="VenturaSky Residences" class="caso-preview-card__img" />
+              <div class="caso-preview-card__overlay"></div>
+              <img src="casos/sky-logo.png" alt="Logo VenturaSky" class="caso-preview-card__logo" />
+              <div class="caso-preview-card__hover">
+                <span class="caso-preview-card__stat">78% unidades en preventa</span>
+                <span class="caso-preview-card__cta">Ver caso completo →</span>
+              </div>
+            </div>
+            <div class="caso-preview-card__info">
+              <span class="caso-preview-card__tag">Residencial Premium · 2025</span>
+              <h3 class="caso-preview-card__title">VenturaSky Residences</h3>
+            </div>
+          </a>
+
+          <a href="casos/cristalinas.html" class="caso-preview-card">
+            <div class="caso-preview-card__img-wrap">
+              <img src="casos/cristalinas-img.png" alt="Cristalinas" class="caso-preview-card__img" />
+              <div class="caso-preview-card__overlay"></div>
+              <img src="casos/cristalinas-logo.png" alt="Logo Cristalinas" class="caso-preview-card__logo" />
+              <div class="caso-preview-card__hover">
+                <span class="caso-preview-card__stat">–62% costo por lead</span>
+                <span class="caso-preview-card__cta">Ver caso completo →</span>
+              </div>
+            </div>
+            <div class="caso-preview-card__info">
+              <span class="caso-preview-card__tag">Desarrollo Residencial · 2024</span>
+              <h3 class="caso-preview-card__title">Cristalinas</h3>
+            </div>
+          </a>
+
+          <a href="casos/costanera-housing.html" class="caso-preview-card">
+            <div class="caso-preview-card__img-wrap">
+              <img src="casos/costanera-housing-img.png" alt="Costanera Housing" class="caso-preview-card__img" />
+              <div class="caso-preview-card__overlay"></div>
+              <div class="caso-preview-card__hover">
+                <span class="caso-preview-card__stat">5x ROI de campaña</span>
+                <span class="caso-preview-card__cta">Ver caso completo →</span>
+              </div>
+            </div>
+            <div class="caso-preview-card__info">
+              <span class="caso-preview-card__tag">Barrio Privado · 2024</span>
+              <h3 class="caso-preview-card__title">Costanera Housing</h3>
+            </div>
+          </a>
+
+        </div>
+        <div class="casos-preview__footer">
+          <a href="casos.html" class="btn btn--ghost">Ver todos los casos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">El equipo</span>
+          <h2 class="section__title">Las personas detrás<br />de cada estrategia</h2>
+        </div>
+        <div class="team__grid">
+
+          <div class="team-card">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">
+                <img src="assets/images/matias-image.jpg" alt="Matías Zapata" />
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Matías H. Zapata Fleitas</h3>
+              <span class="team-card__role">Director de Estrategia</span>
+              <p class="team-card__bio">8 años liderando estrategias de marketing para pymes y startups. Especialista en growth y lanzamientos de alto impacto.</p>
+              <a href="https://www.linkedin.com/in/matiaszapata-digital-marketing/" target="_blank" rel="noopener" class="team-card__linkedin" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">
+                <img src="assets/images/nicolas-image.jpg" alt="Nicolás Opazo Balatti" />
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Nicolás Opazo Balatti</h3>
+              <span class="team-card__role">Lic. en Comunicación</span>
+              <p class="team-card__bio">Especialista en comunicación estratégica, contenido y narrativa de marca. Transforma mensajes complejos en historias que conectan y convierten.</p>
+              <a href="https://www.linkedin.com/in/nicolás-opazo-balatti/" target="_blank" rel="noopener" class="team-card__linkedin" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">
+                <img src="assets/images/alan-images.jpg" alt="Carlos Araque Baleta" />
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Carlos Araque Baleta</h3>
+              <span class="team-card__role">Software Developer</span>
+              <p class="team-card__bio">Desarrollador de soluciones digitales orientadas a marketing. Construye las herramientas tecnológicas que potencian cada estrategia.</p>
+              <a href="https://www.linkedin.com/in/carlos-araque-baleta/" target="_blank" rel="noopener" class="team-card__linkedin" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">
+                <img src="assets/images/make-images.jpg" alt="María Jesús Harispe" />
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">María Jesús Harispe</h3>
+              <span class="team-card__role">Diseño Gráfico</span>
+              <p class="team-card__bio">Diseñadora gráfica especializada en identidad visual y piezas creativas para campañas digitales. Traduce la estrategia en imágenes que comunican y conectan.</p>
+              <a href="https://www.linkedin.com/in/mariaharispe/" target="_blank" rel="noopener" class="team-card__linkedin" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__avatar-wrap">
+              <div class="team-card__avatar">
+                <img src="assets/images/yeiko-images.png" alt="Yeiko Zahir Nova Hernández" />
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Yeiko Zahir Nova Hernández</h3>
+              <span class="team-card__role">Responsable de IT | Infraestructura, Cloud &amp; Automatización</span>
+              <p class="team-card__bio">Especialista en infraestructura tecnológica, cloud y automatización de procesos. Garantiza que cada solución digital opere con máxima eficiencia y escala.</p>
+              <a href="https://www.linkedin.com/in/yeiko-zahir-nova-hern%C3%A1ndez-090148264/" target="_blank" rel="noopener" class="team-card__linkedin" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS / TESTIMONIOS -->
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Resultados reales</span>
+          <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-card__text">"En 3 meses duplicamos el tráfico orgánico y bajamos el costo por lead a la mitad. El equipo de NAVEGO sabe exactamente qué botones apretar."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MC</div>
+              <div>
+                <div class="testimonial-card__name">Marcela C.</div>
+                <div class="testimonial-card__role">CEO, Expansión Retail</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-card__text">"Llevábamos años sin saber realmente si nuestro marketing funcionaba. Ahora tenemos dashboards claros y un equipo que nos explica todo en lenguaje de negocios."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">RV</div>
+              <div>
+                <div class="testimonial-card__name">Rodrigo V.</div>
+                <div class="testimonial-card__role">Director Comercial, TechPyme</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-card__text">"La estrategia de contenido que diseñaron posicionó nuestra marca como referente del sector en menos de 6 meses. Invertimos bien."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AL</div>
+              <div>
+                <div class="testimonial-card__name">Ana L.</div>
+                <div class="testimonial-card__role">Fundadora, Clínica Estética Lumina</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--accent" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="section__tag section__tag--light">Empecemos</span>
+          <h2 class="section__title section__title--light">¿Listo para hacer crecer tu negocio?</h2>
+          <p class="contact__sub">Primera consulta sin costo. Sin compromisos. Solo una conversación honesta sobre tu situación y cómo podemos ayudarte.</p>
+          <div class="contact__details">
+            <a href="mailto:matias@nave.com" class="contact__link">matias@nave.com</a>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">Empresa (opcional)</label>
+            <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" />
+          </div>
+          <div class="form-group">
+            <label for="message">¿En qué podemos ayudarte?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cuéntanos brevemente sobre tu negocio y tus objetivos..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn--submit" id="submitBtn">Enviar mensaje</button>
+          <p class="form-success" id="formSuccess">Mensaje enviado. Te contactamos en menos de 24 horas.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo"><img src="assets/images/nave.svg" alt="NAVEGO" /></span>
+      <p class="footer__copy">&copy; 2026 NAVEGO. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="mailto:matias@nave.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/circuit.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
